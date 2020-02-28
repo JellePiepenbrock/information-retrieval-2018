@@ -1,4 +1,5 @@
 # information-retrieval-2018
-Our learning to rank project using pointwise logistic regression and pairwise RankSVM to rerank medical documents. The code can be directly opened in Google Colab in the web browser by clicking the 'Colab' link at the top of the ipynb file.
+Improving the retrieval of relevant medical information from large health databases could contribute to a better health care system. There is a long history of systems produced to obtain relevance rankings for documents (Learning To Rank). In this project we wanted to experiment with various features and algorithms that are commonly used in Information Retrieval systems and see which ones can be applied to the medical field. We used the dataset provided during the TREC-9 conference, namely the OHSUMED dataset. Pointwise Logistic Regression and Pairwise RankSVM were used to rerank a set of documents for queries. We experiment with various combinations of features to find the set which performs best on our training data and find that Partial Term Frequencies and the cosine distance between TF-IDF of the query and the document to be relevant features. With the final set of features we improve the Microsoft baseline, where our pointwise method outperforms our pairwise ranking method.
 
-Note: for full reproduction of the project, you will need the data. Send me a message in that case.
+The remainder of our paper can be found [here](https://github.com/mickvanhulst/learning_to_rank_medical_documents/blob/master/report.pdf).
+
