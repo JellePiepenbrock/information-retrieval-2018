@@ -1,5 +1,6 @@
-# information-retrieval-2018
+# Learning to rank medical publications
 Improving the retrieval of relevant medical information from large health databases could contribute to a better health care system. There is a long history of systems produced to obtain relevance rankings for documents (Learning To Rank). In this project we wanted to experiment with various features and algorithms that are commonly used in Information Retrieval systems and see which ones can be applied to the medical field. We used the dataset provided during the TREC-9 conference, namely the OHSUMED dataset. Pointwise Logistic Regression and Pairwise RankSVM were used to rerank a set of documents for queries. We experiment with various combinations of features to find the set which performs best on our training data and find that Partial Term Frequencies and the cosine distance between TF-IDF of the query and the document to be relevant features. With the final set of features we improve the Microsoft baseline, where our pointwise method outperforms our pairwise ranking method.
 
 The remainder of our paper can be found [here](https://github.com/mickvanhulst/learning_to_rank_medical_documents/blob/master/report.pdf).
 
+This repository belongs to a project that was performed by the authors, mentioned in the paper above, for the (2018) Information Retrieval course at the Radboud University.
